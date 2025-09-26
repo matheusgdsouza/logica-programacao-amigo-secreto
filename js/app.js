@@ -19,5 +19,6 @@ function sortear(){
 }
 
 function reiniciar(){
-
+    //Limpando campo de nomes digitados
+    document.getElementById("lista-amigos").textContent = "";
 }
