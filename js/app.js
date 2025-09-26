@@ -15,6 +15,8 @@ function adicionar(){
 }
 
 function sortear(){
+    //Declarando função para embaralhar elementos da lista
+    embaralha(listaNomes);
 
 }
 
