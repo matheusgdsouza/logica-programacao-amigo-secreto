@@ -18,6 +18,16 @@ function sortear(){
     //Declarando função para embaralhar elementos da lista
     embaralha(listaNomes);
 
+    //Construção da lógica para que todos os nomes sejam sorteados
+    let resultadoSorteio = document.getElementById("lista-sorteio");
+    for( i = 0; i < listaNomes.length; i++){
+        if(i + 1 == listaNomes.length){
+            resultadoSorteio.innerHTML = resultadoSorteio.innerHTML + listaNomes[i] + " --> " + listaNomes[0];
+        }else {
+            resultadoSorteio.innerHTML = resultadoSorteio.innerHTML + listaNomes[i] + " --> " + listaNomes[i + 1] + "<br>";
+        }
+    }
+
 }
 
 //Adicionando função que embaralha os elementos da lista, essencial para o sorteio
