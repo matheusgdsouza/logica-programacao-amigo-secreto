@@ -9,6 +9,9 @@ function adicionar(){
     //Exibir lista no campo de nomes
     let campoNomes = document.getElementById("lista-amigos");
     campoNomes.textContent = listaNomes;
+
+    //Limpando campo de digitação após a inclusão do nome
+    document.getElementById("nome-amigo").value = "";
 }
 
 function sortear(){
