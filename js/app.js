@@ -4,9 +4,11 @@ function adicionar(){
     let nomeDigitado = document.getElementById("nome-amigo").value;
 
     //Adicionar o nome em uma lista
-    listaNomes.push(nomeDigitado);
+    listaNomes.push(" " + nomeDigitado);
 
     //Exibir lista no campo de nomes
+    let campoNomes = document.getElementById("lista-amigos");
+    campoNomes.textContent = listaNomes;
 }
 
 function sortear(){
