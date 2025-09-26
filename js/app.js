@@ -46,4 +46,7 @@ function embaralha(lista) {
 function reiniciar(){
     //Limpando campo de nomes digitados
     document.getElementById("lista-amigos").textContent = "";
+
+    //Limpando campo do sorteio
+    document.getElementById("lista-sorteio").textContent = "";
 }
